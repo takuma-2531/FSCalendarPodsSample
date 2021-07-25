@@ -22,6 +22,10 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="300" id="aQS-YJ-ck6"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="BT7-nt-S2X"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="wYB-HR-Fwj"/>
+                                </connections>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -32,6 +36,9 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="n4i-9P-4VC" secondAttribute="trailing" constant="16" id="liz-x0-PwZ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="calendar" destination="n4i-9P-4VC" id="Apo-wZ-Nks"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

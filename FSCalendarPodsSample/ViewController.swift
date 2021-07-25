@@ -6,12 +6,18 @@
 //
 
 import UIKit
+import FSCalendar
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var calendar: FSCalendar!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
+        calendar.appearance.todayColor = .red
+        calendar.appearance.headerTitleColor = .blue
+        calendar.appearance.weekdayTextColor = .green
     }
 
 
