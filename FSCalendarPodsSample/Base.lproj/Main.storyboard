@@ -27,17 +27,42 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="wYB-HR-Fwj"/>
                                 </connections>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YOC-RZ-2ES">
+                                <rect key="frame" x="16" y="328" width="41.5" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="40" id="ieg-kk-7DA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nNx-NI-mwM">
+                                <rect key="frame" x="16" y="357" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="sJb-K1-HUE"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="tapToggleWeekOrMonthButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JQG-x6-tbE"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="nNx-NI-mwM" firstAttribute="top" secondItem="YOC-RZ-2ES" secondAttribute="bottom" constant="8" symbolic="YES" id="2Km-Qe-qZ4"/>
                             <constraint firstItem="n4i-9P-4VC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="8ef-lJ-ebR"/>
+                            <constraint firstItem="nNx-NI-mwM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Wo6-38-HQV"/>
+                            <constraint firstItem="YOC-RZ-2ES" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="cfB-CQ-VDK"/>
+                            <constraint firstItem="YOC-RZ-2ES" firstAttribute="top" secondItem="n4i-9P-4VC" secondAttribute="bottom" constant="8" symbolic="YES" id="fEQ-dS-29q"/>
                             <constraint firstItem="n4i-9P-4VC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="fmd-IQ-4wC"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="n4i-9P-4VC" secondAttribute="trailing" constant="16" id="liz-x0-PwZ"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="calendar" destination="n4i-9P-4VC" id="Apo-wZ-Nks"/>
+                        <outlet property="calendarHeight" destination="aQS-YJ-ck6" id="dYX-lh-Z2s"/>
+                        <outlet property="selectDateLabel" destination="YOC-RZ-2ES" id="Dgm-ec-HYI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
