@@ -7,5 +7,6 @@ target 'FSCalendarPodsSample' do
 
   # Pods for FSCalendarPodsSample
   pod 'FSCalendar'
+  pod 'CalculateCalendarLogic'
 
 end
